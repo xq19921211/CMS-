@@ -1,0 +1,106 @@
+// global transition css
+
+/* fade */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.28s;
+}
+
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+
+/* fade-transform */
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all .5s;
+}
+
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+/* fade-to-left */
+.fade-to-left-leave-active,
+.fade-to-left-enter-active {
+  transition: all .5s;
+}
+
+.fade-to-left-enter {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+.fade-to-left-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+/* breadcrumb transition */
+.breadcrumb-enter-active,
+.breadcrumb-leave-active {
+  transition: all .5s;
+}
+
+.breadcrumb-enter,
+.breadcrumb-leave-active {
+  opacity: 0;
+  transform: translateX(20px);
+}
+
+.breadcrumb-move {
+  transition: all .5s;
+}
+
+.breadcrumb-leave-active {
+  position: absolute;
+}
+
+.slide-in {//表格操作按钮显示隐藏过渡效果
+  animation: slideInRight 0.5s ;
+}
+@keyframes slideInRight {
+  from {
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    position: absolute;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.slide-out {
+  animation: slideOutRight 0.5s;
+}
+
+@keyframes slideOutRight {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    visibility: hidden;
+    transform: translate3d(100%, 0, 0);
+    position: absolute;
+  }
+}
+
+.rotate{//刷新旋转动画
+  animation: test 1s infinite;
+}
+@keyframes test {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}

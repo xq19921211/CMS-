@@ -1,0 +1,50 @@
+{
+  "name": "gforce",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve --mode dev",
+    "build": "vue-cli-service build --mode prod",
+    "lint": "vue-cli-service lint --mode lint",
+    "initApi": "node script.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "core-js": "^2.6.5",
+    "element-ui": "^2.4.5",
+    "lru-cache": "^5.1.1",
+    "nprogress": "^0.2.0",
+    "register-service-worker": "^1.6.2",
+    "vue": "^2.6.10",
+    "vue-class-component": "^7.0.2",
+    "vue-property-decorator": "^8.1.0",
+    "vue-quill-editor": "^3.0.6",
+    "vue-router": "^3.0.3",
+    "vue-ueditor-wrap": "^2.4.2",
+    "vuex": "^3.0.1",
+    "vuex-class": "^0.3.2",
+    "vuex-persistedstate": "^2.5.4"
+  },
+  "devDependencies": {
+    "@types/nprogress": "0.0.29",
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-pwa": "^3.7.0",
+    "@vue/cli-plugin-typescript": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
+    "sass": "^1.18.0",
+    "sass-loader": "^7.1.0",
+    "svg-sprite-loader": "^4.1.6",
+    "typescript": "^3.4.3",
+    "vue-cli-plugin-element": "^1.0.1",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

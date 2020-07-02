@@ -1,0 +1,44 @@
+{
+  "defaultSeverity": "warning",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**"
+    ]
+  },
+  "rules": {
+    "quotemark": false,
+    "trailing-comma": [true, { //对尾随逗号的校验
+      "multiline": {
+        "objects": "never",
+        "arrays": "never",
+        "functions": "never",
+        "typeLiterals": "ignore"
+      },
+      "esSpecCompliant": true //是否允许尾随逗号出现在剩余变量中
+    }],
+    "max-line-length": [ // 每行最大字符数，忽略导出导出
+      true, 
+      {
+        "limit": 150, 
+        "ignore-pattern": "^import [^,]+ from |^export | implements"
+      }
+    ],
+    "indent": [true, "spaces", 2],
+    "interface-name": false,
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "no-consecutive-blank-lines": false,
+    "no-console": false,
+    "no-unused-expression": false,
+    "no-trailing-whitespace": false,
+    "prefer-const": false,
+    "noImplicitAny":false,   //去除ts报错的 '变量有隐含的any类型'
+    "forin": false, // 允许使用for - in 循环
+    "no-empty": false, // 允许空的块
+    "triple-equals": false, // 允许使用=== 和 ！==
+    "jsdoc-format":false // 去除jsDoc注释的规范
+  }
+}
