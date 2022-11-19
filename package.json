@@ -30,10 +30,10 @@
     "@vue/cli-plugin-babel": "^3.7.0",
     "@vue/cli-plugin-pwa": "^3.7.0",
     "@vue/cli-plugin-typescript": "^3.7.0",
-    "@vue/cli-service": "^3.7.0",
+    "@vue/cli-service": "^5.0.8",
     "sass": "^1.18.0",
     "sass-loader": "^7.1.0",
-    "svg-sprite-loader": "^4.1.6",
+    "svg-sprite-loader": "^6.0.11",
     "typescript": "^3.4.3",
     "vue-cli-plugin-element": "^1.0.1",
     "vue-template-compiler": "^2.5.21"
